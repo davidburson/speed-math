@@ -2,37 +2,6 @@
   "name": "speed-math",
   "version": "0.0.1",
   "main": "index.js",
-  "scripts": {
-    "start": "cd build && electron .",
-    "build": "node build.js && cd build && yarn install --production && cd .. && babel src --out-dir build",
-    "watch": "babel src --watch --out-dir build",
-    "build-native": "electron-builder --dir",
-    "pack-native": "electron-builder",
-    "complete-build": "npm run build && npm run pack-native"
-  },
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "fs-extra-promise": "^1.0.1",
-    "jquery": "^3.2.1",
-    "lodash": "^4.17.4",
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "rmrf-promise": "^1.1.0",
-    "sweetalert": "^2.1.0"
-  },
-  "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-syntax-async-functions": "^6.13.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-react": "^6.24.1",
-    "electron": "^1.7.10",
-    "electron-builder": "^19.53.6",
-    "eslint": "^4.15.0",
-    "eslint-plugin-react": "^7.5.1"
-  },
   "build": {
     "electronVersion": "1.7.10",
     "appId": "com.fmosoft.speed-math",
@@ -69,5 +38,36 @@
         "Name": "Speed Math"
       }
     }
+  },
+  "scripts": {
+    "start": "cd build && electron .",
+    "build": "node build.js && cd build && yarn install --production && cd .. && babel src --out-dir build",
+    "watch": "babel src --watch --out-dir build",
+    "build-native": "electron-builder --dir",
+    "pack-native": "electron-builder",
+    "complete-build": "npm run build && npm run pack-native"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "fs-extra-promise": "^1.0.1",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rmrf-promise": "^1.1.0",
+    "sweetalert": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "electron": "^1.7.10",
+    "electron-builder": "^19.53.6",
+    "eslint": "^4.15.0",
+    "eslint-plugin-react": "^7.5.1"
   }
 }
