@@ -87,6 +87,9 @@ class PageOfProblems extends React.Component {
                         [numbers[0], numbers[1]] = [numbers[1], numbers[0]];    // swap to make the largest number be first
                     } else if (operator === '\u00F7') {
                         numbers[0] = numbers[0] * numbers[1];   // create the dividend as the first element
+                        if (numbers[1] === 0) {
+                            numbers[1] = Math.ceil(Math.random() * 9);
+                        }
                     }
 
                     return {
