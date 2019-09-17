@@ -55,7 +55,7 @@
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react-dom": "^16.2.1",
     "rmrf-promise": "^1.1.0",
     "sweetalert": "^2.1.0"
   },
