@@ -51,7 +51,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "fs-extra-promise": "^1.0.1",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
